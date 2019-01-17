@@ -14,8 +14,6 @@ public class CodingHours {
         float semesterWork = 52 * 17;
         float totalHours = 168 * 17;
         float myNumberPerc = semesterWork / (totalHours / 100.0f);
-
-
         System.out.println(myNumberPerc + "%");
     }
 }
