@@ -9,7 +9,7 @@ public class TwoNumbers {
         // Print the result of 22 multiplied by 13
         System.out.println(22 * 13);
         // Print the result of 22 divided by 13 (as a decimal fraction)
-        float myNumberFloat = (float) 22 / (float) 13;
+        float myNumberFloat =  22.0f / 13.0f;
         System.out.println(myNumberFloat);
         // Print the integer part of 22 divided by 13
         int myNumberInt = 22 / 13;
