@@ -6,8 +6,8 @@ public class HelloUser {
         // The program should ask for the name of the user
 
         Scanner scanner = new Scanner(System.in);
-        String userInput1 = scanner.nextLine();
+        String userInput = scanner.nextLine();
 
-        System.out.println("Hello, " + userInput1 + "!");
+        System.out.println("Hello, " + userInput + "!");
     }
 }
