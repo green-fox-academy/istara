@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: rgb(80, 80, 80);
+    padding: 8px 0px 10px;
+}
+.header h1 {
+    font-size: 24px;
+    margin: 0% 10%;
+}
+
+.base {
+    padding: 0% 10%;
+}
+
+.base h3 {
+    margin: 5px 0px 2px;
+    font-weight: bold; 
+}
+
+input {
+    margin: 5px 0px;
+    padding: 5px 30px 5px 5px;
+    border: 1px solid black;
+}
+
+.title {
+    border-radius: 3px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.boxed {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 3px;
+    border-radius: 2px;
+} 
+
+div h1{
+    margin: 2px;
+}
+
+div p {
+    margin: 2px;
+    padding: 3px;
+}
+
+form input {
+    padding: 0px 20px;
+}
