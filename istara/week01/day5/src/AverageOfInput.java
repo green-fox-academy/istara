@@ -10,8 +10,7 @@ public class AverageOfInput {
         System.out.println("Please enter five numbers to add them and get the average of them:");
 
         Scanner num = new Scanner(System.in);
-        int a = num.nextInt();
-        int b = num.nextInt(); int c = num.nextInt(); int d = num.nextInt(); int e = num.nextInt();
+        int a = num.nextInt(); int b = num.nextInt(); int c = num.nextInt(); int d = num.nextInt(); int e = num.nextInt();
 
         int add = a + b + c + d + e;
         int average = add / 5;
