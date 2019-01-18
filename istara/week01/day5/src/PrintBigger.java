@@ -4,7 +4,7 @@ public class PrintBigger {
     public static void main(String[] args) {
         // Write a program that asks for two numbers and prints the bigger one
 
-        System.out.println("Enter number and I'll print which one is larger:");
+        System.out.println("Enter two numbers and I'll print which one is larger:");
         Scanner num = new Scanner(System.in);
         int a = num.nextInt(); int b = num.nextInt();
 
