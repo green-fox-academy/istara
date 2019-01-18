@@ -19,11 +19,11 @@ public class GuessTheNumber {
 
 
         if (guess > result) {
-            System.out.println("The stored number is higher");;
+            System.out.println("The stored number is higher");
         } else if (guess < result) {
-            System.out.println("The stried number is lower");;
+            System.out.println("The stried number is lower");
         } else {
-            System.out.println("You found the number: " + result);;
+            System.out.println("You found the number: " + result);
         }
     }
 }
