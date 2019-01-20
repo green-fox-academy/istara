@@ -18,9 +18,9 @@ public class GuessTheNumber {
         int guess = input.nextInt();
 
 
-        if (guess > result) {
+        if (guess < result) {
             System.out.println("The stored number is higher");
-        } else if (guess < result) {
+        } else if (guess > result) {
             System.out.println("The stried number is lower");
         } else {
             System.out.println("You found the number: " + result);
