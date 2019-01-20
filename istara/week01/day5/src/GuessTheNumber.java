@@ -12,18 +12,21 @@ public class GuessTheNumber {
 
 
         int result = 8;
+        int guess = 0;
 
-        System.out.println("Guess my number:");
-        Scanner input = new Scanner(System.in);
-        int guess = input.nextInt();
+        while(result != guess) {
+            System.out.println("Guess my number:");
+            Scanner input = new Scanner(System.in);
+            guess = input.nextInt();
 
 
-        if (guess < result) {
-            System.out.println("The stored number is higher");
-        } else if (guess > result) {
-            System.out.println("The stried number is lower");
-        } else {
-            System.out.println("You found the number: " + result);
+            if (guess < result) {
+                System.out.println("The stored number is higher");
+            } else if (guess > result) {
+                System.out.println("The stried number is lower");
+            } else {
+                System.out.println("You found the number: " + result);
+            }
         }
     }
 }

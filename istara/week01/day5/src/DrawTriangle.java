@@ -14,12 +14,11 @@ public class DrawTriangle {
 
         System.out.println("Enter number of rows: ");
         Scanner input = new Scanner(System.in);
-        int row = input.nextInt();
+        int lineNumber = input.nextInt();
 
-        for (int b = 1; b <= row; b++) {
-
-            for (int a = 1; a <= row; a++) {
-                if (a <= b) {
+        for (int a = 1; a <= lineNumber; a++) {
+            for (int b = 1; b <= lineNumber; b++) {
+                if (a >= b) {
                     System.out.print("*");
                 }
             }
