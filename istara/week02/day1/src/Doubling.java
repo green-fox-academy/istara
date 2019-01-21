@@ -8,14 +8,15 @@
 
 public class Doubling {
     public static void main(String[] args) {
-        System.out.println(doubling());
+        int baseNum = 123;
 
+        int eredmeny = doubling(baseNum);
+        System.out.println(eredmeny);
     }
-    static int baseNum = 123;
 
-    public static int doubling() {
-        int i = baseNum * 2;
+    public static int doubling(int doubleMe) {
+        doubleMe = doubleMe * 2;
 
-        return i;
+        return doubleMe;
     }
 }
