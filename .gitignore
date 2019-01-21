@@ -17,3 +17,7 @@
 *.zip
 *.tar.gz
 *.rar
+# Folders
+META_INF
+
+*.kotlin_module
