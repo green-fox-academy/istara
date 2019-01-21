@@ -4,19 +4,15 @@
 
 
 
-
-
 public class Doubling {
     public static void main(String[] args) {
         int baseNum = 123;
+        int y = doubling(baseNum);
 
-        int eredmeny = doubling(baseNum);
-        System.out.println(eredmeny);
+        System.out.println(y);
     }
-
-    public static int doubling(int doubleMe) {
-        doubleMe = doubleMe * 2;
-
-        return doubleMe;
+    public static int doubling(int x) {
+        x = x * 2;
+        return x;
     }
 }

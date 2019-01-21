@@ -6,17 +6,12 @@
 // - Greet `al`
 
 
-
-
-
 public class GreeterFunction {
     public static void main(String[] args) {
         String a1 = "Greenfox";
-
         greet(a1);
     }
-
-    public static void greet(String somebodyToGreet) {
-        System.out.println("Greetings dear, " + somebodyToGreet);
+    public static void greet(String x) {
+        System.out.println("Greetings dear, " + x);
     }
 }
