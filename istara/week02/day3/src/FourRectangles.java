@@ -1,4 +1,4 @@
-/*import javax.swing.*;
+import javax.swing.*;
 
 import java.awt.*;
 
@@ -6,21 +6,16 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
 public class FourRectangles {
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
         // draw four different size and color rectangles.
         // avoid code duplication.
 
 
-        graphics.setColor(Color.);
-        graphics.drawRect();
-        graphics.setColor(Color.RED);
-        graphics.drawRect();
-        graphics.setColor(Color.RED);
-        graphics.drawRect();
-        graphics.setColor(Color.RED);
-        graphics.drawRect();
+        for (int i = 0; i < 4; i++) {
+            graphics.setColor(new Color(((int) (Math.random() * 255)), (int) (Math.random() * 255), (int) (Math.random() * 255)));
+            graphics.fillRect((int) ((Math.random() * 100)), (int) ((Math.random() * 100)), (int) (Math.random() * 100), (int) ((Math.random() * 100)));
+        }
     }
-
     // Don't touch the code below
     static int WIDTH = 320;
     static int HEIGHT = 320;
@@ -43,4 +38,4 @@ public class FourRectangles {
             mainDraw(graphics);
         }
     }
-} */
+}
