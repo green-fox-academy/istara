@@ -1,24 +1,23 @@
-import javax.swing.*;
+/*import javax.swing.*;
 
 import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class CenterBoxFunction {
+public class RainbowBoxFunction {
+    public static void mainDraw(Graphics graphics) {
+        // Create a square drawing function that takes 3 parameters:
+        // The square size, the fill color, graphics
+        // and draws a square of that size and color to the center of the canvas.
+        // Create a loop that fills the canvas with rainbow colored squares.
 
-    public static void mainDraw(Graphics graphics){
-        // create a square drawing function that takes 2 parameter:
-        // the square size and the graphics
-        // and draws a square of that size to the center of the canvas.
-        // draw 3 squares with that function.
-        // avoid code duplication.
-
-        int square = 50;
-        draw(square, graphics);
+        int square;
+        graphics.setColor(new Color()) = colorOf;
+        draw(square, colorOf, graphics);
     }
     public static void draw(int square2, Graphics graphics) {
         for (int i = 0; i < 3; i++) {
-            square2 += (Math.random() * 100 * i);
+            square2 += 30;
             graphics.drawRect(WIDTH/2-square2/2,WIDTH/2-square2/2, square2, square2);
         }
     }
@@ -45,4 +44,4 @@ public class CenterBoxFunction {
             mainDraw(graphics);
         }
     }
-}
+}*/
