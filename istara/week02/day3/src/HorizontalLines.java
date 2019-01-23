@@ -1,22 +1,24 @@
 import javax.swing.*;
 
 import java.awt.*;
-import java.awt.image.ImageObserver;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class LineInTheMiddle {
-    public static void mainDraw(Graphics graphics){
-        // draw a red horizontal line to the canvas' middle.
-        // draw a green vertical line to the canvas' middle.
+public class HorizontalLines {
+    public static void mainDraw(Graphics graphics) {
+        // Create a line drawing function that takes 3 parameters:
+        // The x and y coordinates of the line's starting point and the graphics
+        // and draws a 50 long horizontal line from that point.
+        // Draw 3 lines with that function. Use loop for that.
 
-
-        graphics.setColor(Color.RED);
-        graphics.drawLine(0,0, WIDTH/2,HEIGHT/2);
-
-        graphics.setColor(Color.GREEN);
-        graphics.drawLine(0,0,WIDTH/2,HEIGHT/2);
-
+        int x = 30;
+        int y = 30;
+        draw(x, y, graphics);
+    }
+    public static void draw(int x, int y, Graphics graphics) {
+        for (int i = 0; i < 3; i++) {
+            graphics.drawLine(x + i, y + i * 10, x + i + 50, y + i * 10);
+        }
     }
 
     // Don't touch the code below

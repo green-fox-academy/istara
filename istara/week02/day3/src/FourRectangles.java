@@ -1,22 +1,24 @@
-import javax.swing.*;
+/*import javax.swing.*;
 
 import java.awt.*;
-import java.awt.image.ImageObserver;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class LineInTheMiddle {
+public class FourRectangles {
+
     public static void mainDraw(Graphics graphics){
-        // draw a red horizontal line to the canvas' middle.
-        // draw a green vertical line to the canvas' middle.
+        // draw four different size and color rectangles.
+        // avoid code duplication.
 
 
+        graphics.setColor(Color.);
+        graphics.drawRect();
         graphics.setColor(Color.RED);
-        graphics.drawLine(0,0, WIDTH/2,HEIGHT/2);
-
-        graphics.setColor(Color.GREEN);
-        graphics.drawLine(0,0,WIDTH/2,HEIGHT/2);
-
+        graphics.drawRect();
+        graphics.setColor(Color.RED);
+        graphics.drawRect();
+        graphics.setColor(Color.RED);
+        graphics.drawRect();
     }
 
     // Don't touch the code below
@@ -41,4 +43,4 @@ public class LineInTheMiddle {
             mainDraw(graphics);
         }
     }
-}
+} */
