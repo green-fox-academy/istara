@@ -15,7 +15,6 @@ public class CenterBoxFunction {
 
         int square = 50;
         draw(square, graphics);
-
     }
     public static void draw(int square, Graphics graphics) {
         for (int i = 0; i < 3; i++) {
