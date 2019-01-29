@@ -11,20 +11,17 @@ public class CountLines {
         // It should return zero if it can't open the file, and
         // should not raise any error.
 
-        System.out.println(countTheLines("my-file.txt"));
-    }
 
-    public static int countTheLines(String fileName) {
+        System.out.println(countTheLines("my-file.txt"));
+
+    }
+    public static int countTheLines(String fileName){
         try {
             Path filePath = Paths.get(fileName);
-            System.out.println(Files.isReadable(filePath));
             List<String> lines = Files.readAllLines(filePath);
-            int numberOfLines = lines.size();
-            return(numberOfLines);
-
-        } catch (IOException e) {
-            int numberOfLines = 0;
-            return(numberOfLines);
+            return (lines.size());
+        } catch (Exception ex) {
+        return 0;
         }
     }
 }

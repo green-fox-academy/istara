@@ -13,11 +13,12 @@ public class PrintEachLine {
 
         try {
             Path filePath = Paths.get("my-file.txt");
-            Files.readAllLines(Paths.get("my-file.txt"));
             List<String> lines = Files.readAllLines(filePath);
-            System.out.println(lines);
-        } catch (IOException ex) {
-            System.out.println("Unable to read file: my-file.txt");
+            for (String line: lines) {
+                System.out.println(line);
+            }
+        } catch (Exception ex) {
+            System.err.println("Unable to read file: my-file.txt");
         }
     }
 }
