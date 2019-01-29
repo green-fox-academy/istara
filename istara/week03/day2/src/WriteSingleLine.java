@@ -13,16 +13,16 @@ public class WriteSingleLine {
         // In case the program is unable to write the file,
         // It should print the following error message: "Unable to write file: my-file.txt"
 
-        List<String> content = new ArrayList();
-        content.add("Istvan Xoxoxo");
+        manipulateFile();
+    }
+    public static void manipulateFile(){
 
         try {
-            Path filePath = Paths.get("my-file.txt");
-            Files.write(filePath, content);
-            System.out.println(Files.isWritable(filePath));
-
-        } catch (Exception ex) {
-            System.out.println("Unable to write file: my-file.txt");
+            List <String> array = new ArrayList<>();
+            array.add("István xoxo");
+            Files.write(Paths.get("my-file.txt"), array);
+        } catch (Exception ex){
+        System.err.println("Unable to write file: my-file.txt");
         }
     }
 }
