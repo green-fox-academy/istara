@@ -1,7 +1,9 @@
+package pokemon;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class PokemonMain {
+public class Main {
     public static void main(String[] args) {
         List<Pokemon> pokemonOfAsh = initializePokemons();
 
@@ -15,7 +17,12 @@ public class PokemonMain {
 
         // Which pokemon should Ash use?
 
-        System.out.print("I choose you, ");
+        for (Pokemon chosenOne : pokemonOfAsh) {
+            boolean result = chosenOne.effectiveAgainst == wildPokemon.type;
+            if(result == true) {
+                System.out.print("I choose you, " + chosenOne.name);
+            }
+        }
     }
 
     private static List<Pokemon> initializePokemons() {
