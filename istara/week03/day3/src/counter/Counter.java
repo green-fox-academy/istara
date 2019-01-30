@@ -1,25 +1,33 @@
 package counter;
 
 public class Counter {
-    int counter = 0;
-    int number;
+    int counterVar = 0;
+    int startValue;
 
-    public int add(int number) {
-        counter = counter + number;
-        return counter;
+    public Counter(int counter) {
+        this.counterVar = counter;
+        startValue = counter;
+    }
+
+    public Counter() {
+        startValue = counterVar;
+    }
+
+    public int add(int num) {
+        counterVar = counterVar + num;
+        return counterVar;
     }
 
     public int add() {
-        counter = counter + 1;
-        return counter;
+        counterVar = counterVar + 1;
+        return counterVar;
     }
 
-    public void get() {
-        System.out.println(counter);
+    public int get() {
+        return counterVar;
     }
 
-    public int reset() {
-        counter = 0;
-        return counter;
+    public void reset() {
+        counterVar = startValue;
     }
 }
