@@ -1,4 +1,4 @@
-package classes;
+package postIt;
 
 public class PostIt {
     String backgroundColor;
