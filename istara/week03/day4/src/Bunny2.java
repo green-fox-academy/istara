@@ -6,7 +6,6 @@
 
 public class Bunny2 {
     public static void main(String[] args) {
-        int bunnyNium = 0;
         System.out.println(bunnyResult(5));
     }
     public static int bunnyResult(int n) {
