@@ -4,9 +4,13 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class SierpinskyCarpet {
+public class SquareGrid {
     public static void mainDraw(Graphics graphics) {
 
+        graphics.setColor(Color.YELLOW);
+        graphics.fillRect(0, 0, WIDTH, HEIGHT);
+        graphics.setColor(Color.BLACK);
+        graphics.drawRect(0, 0, WIDTH, HEIGHT);
 
         yellowSquare(0, 0, WIDTH, graphics);
     }
@@ -15,17 +19,16 @@ public class SierpinskyCarpet {
 
         int newSize = sizeOfSquare / 3;
 
-        graphics.fillRect(startX + newSize, startY + newSize, newSize, newSize);
+        graphics.drawRect(startX + newSize, startY, newSize, newSize);
+        graphics.drawRect(startX,startY + newSize, newSize, newSize);
+        graphics.drawRect(startX + (sizeOfSquare - newSize),startY + newSize, newSize, newSize);
+        graphics.drawRect(startX + newSize,startX + (sizeOfSquare - newSize), newSize, newSize);
 
         if (newSize != 0) {
-            yellowSquare(startX, startY, newSize, graphics);
             yellowSquare(startX + newSize, startY, newSize, graphics);
-            yellowSquare(startX + newSize * 2, startY, newSize, graphics);
             yellowSquare(startX, startY + newSize, newSize, graphics);
-            yellowSquare(startX + newSize * 2, startY + newSize, newSize, graphics);
-            yellowSquare(startX, startY + newSize * 2, newSize, graphics);
+            yellowSquare(startX + newSize *2, startY + newSize, newSize, graphics);
             yellowSquare(startX + newSize, startY + newSize * 2, newSize, graphics);
-            yellowSquare(startX + newSize * 2, startY + newSize * 2, newSize, graphics);*/
         }
     }
 
