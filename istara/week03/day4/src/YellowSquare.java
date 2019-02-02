@@ -26,11 +26,11 @@ public class YellowSquare {
 
         if (newSize != 0) {
             yellowSquare(startX + newSize, startY, newSize, graphics);
-            yellowSquare(startX, startY + newSize, newSize, graphics);
+            yellowSquare(startX,startY + newSize, newSize, graphics);
             yellowSquare(startX + newSize *2, startY + newSize, newSize, graphics);
             yellowSquare(startX + newSize, startY + newSize * 2, newSize, graphics);
         }
-    }
+    }  hhh
 
 
     // Don't touch the code below

@@ -7,25 +7,24 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 public class SierpinskyCarpet {
     public static void mainDraw(Graphics graphics) {
 
-
-        yellowSquare(0, 0, WIDTH, graphics);
+        drawCarpet(0, 0, WIDTH, graphics);
     }
 
-    public static void yellowSquare(int startX, int startY, int sizeOfSquare, Graphics graphics) {
+    public static void drawCarpet(int startX, int startY, int sizeOfSquare, Graphics graphics) {
 
         int newSize = sizeOfSquare / 3;
 
         graphics.fillRect(startX + newSize, startY + newSize, newSize, newSize);
 
         if (newSize != 0) {
-            yellowSquare(startX, startY, newSize, graphics);
-            yellowSquare(startX + newSize, startY, newSize, graphics);
-            yellowSquare(startX + newSize * 2, startY, newSize, graphics);
-            yellowSquare(startX, startY + newSize, newSize, graphics);
-            yellowSquare(startX + newSize * 2, startY + newSize, newSize, graphics);
-            yellowSquare(startX, startY + newSize * 2, newSize, graphics);
-            yellowSquare(startX + newSize, startY + newSize * 2, newSize, graphics);
-            yellowSquare(startX + newSize * 2, startY + newSize * 2, newSize, graphics);*/
+            drawCarpet(startX, startY, newSize, graphics);
+            drawCarpet(startX + newSize, startY, newSize, graphics);
+            drawCarpet(startX + newSize * 2, startY, newSize, graphics);
+            drawCarpet(startX, startY + newSize, newSize, graphics);
+            drawCarpet(startX + newSize * 2, startY + newSize, newSize, graphics);
+            drawCarpet(startX,startY + newSize * 2, newSize, graphics);
+            drawCarpet(startX + newSize, startY + newSize * 2, newSize, graphics);
+            drawCarpet(startX + newSize * 2, startY + newSize * 2, newSize, graphics);
         }
     }
 
