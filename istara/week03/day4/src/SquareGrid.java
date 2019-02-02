@@ -33,7 +33,6 @@ public class SquareGrid {
     }
 
 
-
     // Don't touch the code below
     static int WIDTH = 729;
     static int HEIGHT = 729;
