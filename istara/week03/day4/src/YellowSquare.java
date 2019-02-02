@@ -30,7 +30,7 @@ public class YellowSquare {
             yellowSquare(startX + newSize *2, startY + newSize, newSize, graphics);
             yellowSquare(startX + newSize, startY + newSize * 2, newSize, graphics);
         }
-    }g
+    }fff
 
 
     // Don't touch the code below
