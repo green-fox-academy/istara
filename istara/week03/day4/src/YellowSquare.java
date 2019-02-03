@@ -22,7 +22,7 @@ public class YellowSquare {
         graphics.drawRect(startX + newSize, startY, newSize, newSize);
         graphics.drawRect(startX,startY + newSize, newSize, newSize);
         graphics.drawRect(startX + (sizeOfSquare - newSize),startY + newSize, newSize, newSize);
-        graphics.drawRect(startX + newSize,startX + (sizeOfSquare - newSize), newSize, newSize);
+        graphics.drawRect(startX + newSize,startY + (sizeOfSquare - newSize), newSize, newSize);
 
         if (newSize != 0) {
             yellowSquare(startX + newSize, startY, newSize, graphics);
