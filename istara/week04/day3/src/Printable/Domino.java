@@ -35,10 +35,8 @@ public class Domino implements Comparable<Domino>, Printable{
     @Override
     public int compareTo(Domino d) {
         if (left > d.left) {
-            return 1;
         }else if (left == d.left) {
             if (right > d.right) {
-                return 1;
             }
         }
         return -1;
