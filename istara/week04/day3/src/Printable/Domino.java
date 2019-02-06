@@ -6,8 +6,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class Domino implements Comparable<Domino>, Printable{
-    public int left;
-    public int right;
+    private final int left;
+    private final int right;
 
     public Domino(int left, int right) {
         this.left = left;
