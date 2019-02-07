@@ -1,4 +1,4 @@
-package Apples;
+package apples;
 
 public class Apples {
     String name;
