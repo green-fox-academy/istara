@@ -1,5 +1,5 @@
 import apples.Apples;
-import Sum.Sum;
+import sum.Sum;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
