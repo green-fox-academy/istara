@@ -3,17 +3,16 @@ package matrixRotation;
 public class MatrixRotation {
 
     private static int[][] matrix = {
-            { 1, 2, 3, 4 },
-            { 5, 6, 7, 8 },
-            { 9, 10, 11, 12 },
-            { 13, 14, 15, 16 }
+            { 1, 2, 3 },
+            { 4, 5, 6 },
+            { 7, 8, 9 },
     };
 
-    private final static int N = 4;
+    private final static int n = 3;
 
-    private static void print() {
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
+    private static void printMatrix() {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
                 System.out.print("\t" + matrix[i][j]);
             }
             System.out.println();
@@ -22,10 +21,10 @@ public class MatrixRotation {
     }
 
     public static void main(String[] args) {
-        print();
+        printMatrix();
 
-        for (int ring = 0; ring < N / 2; ring++) {
-            int farthest = N - ring - 1;
+        for (int ring = 0; ring < n / 2; ring++) {
+            int farthest = n - ring - 1;
 
             for (int i = ring; i < farthest; i++) {
                 int temp = matrix[ring][i];
@@ -37,7 +36,6 @@ public class MatrixRotation {
                 matrix[i][farthest] = temp;
             }
         }
-
-        print();
+        printMatrix();
     }
 }
